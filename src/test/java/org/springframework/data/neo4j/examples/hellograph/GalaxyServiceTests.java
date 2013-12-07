@@ -92,6 +92,7 @@ public class GalaxyServiceTests {
         assertTrue(venus.canBeReachedFrom(earth));
         assertTrue(earth.canBeReachedFrom(mars));
         assertTrue(earth.canBeReachedFrom(mercury));
+        assertTrue(earth.canBeReachedFrom(venus));
     }
     
     @Test

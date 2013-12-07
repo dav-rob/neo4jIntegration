@@ -17,7 +17,9 @@ public class GalaxyService {
 	}
 	
 	public World createWorld(String name, int moons) {
-		return worldRepository.save(new World(name, moons));
+		World world = worldRepository.save(new World(name, moons));
+		System.out.print(String.format("World namd %s, id[%s]", world.getName(), "" + world.getId()));
+		return world;
 	}
 	
 	public Iterable<World> getAllWorlds() {

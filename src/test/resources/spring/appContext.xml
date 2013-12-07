@@ -18,7 +18,7 @@
     <context:annotation-config/>
     <context:component-scan base-package="org.springframework.data.neo4j.examples.hellograph" />
 
-    <neo4j:config storeDirectory="target/neo4j-db"/>
+    <neo4j:config storeDirectory="/Users/davidroberts/java/neo4j-community-1.8.1/data/graph.db"/>
     <neo4j:repositories base-package="org.springframework.data.neo4j.examples.hellograph"/>
 
     <tx:annotation-driven mode="aspectj"/>
